@@ -23,6 +23,15 @@ class Song
   end 
   def self.genre_count 
     hash = {}
-    binding.pry
+    counter = 0 
+    @@genres.each do |element|
+      if hash.include?(element)
+        counter += 1 
+        hash[element] = counter 
+      else 
+        counter += 1 
+      end 
+    end 
+    hash
   end 
 end 
