@@ -13,6 +13,6 @@ class Song
     @@genres << genre 
   end 
   def self.count 
-    @@count.uniq.size 
+    @@count
   end 
 end 
