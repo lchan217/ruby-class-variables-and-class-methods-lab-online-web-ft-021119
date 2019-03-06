@@ -27,9 +27,9 @@ class Song
     @@genres.each do |element|
       if hash.include?(element)
         counter += 1 
-        hash[element] = counter 
       else 
         counter += 1 
+        hash[element] = counter 
       end 
     end 
     hash
